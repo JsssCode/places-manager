@@ -1,0 +1,27 @@
+.places-manager-container {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #eee;
+}
+
+.places-manager-sidenav {
+  padding-top: 20px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  width: 650px;
+}
+
+.toggle-button{
+  position: absolute;
+  top: 50px;
+  z-index: 1;
+}
+
+.search-place-card {
+  margin-bottom: 20px;
+}

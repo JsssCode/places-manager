@@ -1,0 +1,27 @@
+<form class="find-place-form-container" (ngSubmit)="onSubmit()" [formGroup]="addPlaceForm">
+  <mat-card class="search-card">
+    <mat-card-header>
+      <mat-card-title class="search-card-title">Enter Place overview</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+
+      <mat-form-field>
+        <input matInput type="text" placeholder="place overview" formControlName="place">
+        <mat-error *ngIf="addPlaceForm.controls['place'].hasError('required')">
+          Place overview is
+          <strong>required</strong>
+        </mat-error>
+      </mat-form-field>
+
+      <!--TODO search by phone number div> OR </div>
+
+      <mat-form-field>
+        <span matPrefix>+1 &nbsp;</span>
+        <input matInput type="text" placeholder="phone number" formControlName="phone">
+      </mat-form-field-->
+
+      <button type="submit" mat-raised-button color="primary">
+        <mat-icon>search</mat-icon>Find place</button>
+    </mat-card-content>
+  </mat-card>
+</form>

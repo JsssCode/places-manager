@@ -1,0 +1,10 @@
+<div>Next places were found</div>
+<mat-selection-list #places [(ngModel)]="selectedOptions" (ngModelChange)="onNgModelChange($event)">
+  <mat-list-option [selected]="true" *ngFor="let place of data" [value]="place">
+    {{place.name}}
+  </mat-list-option>
+</mat-selection-list>
+<div class="button-section">
+  <button mat-flat-button color="accent" mat-dialog-close (click)="savePlaces()">Save</button>
+  <button mat-flat-button color="primary" mat-dialog-close>Close</button>
+</div>
