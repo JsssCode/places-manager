@@ -1,6 +1,16 @@
 # PlacesManager
 
+Angular 6 + Material, Google Places API, Google Maps.
+Link to video w/ UX https://youtu.be/tI0rFXtmAUo.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.8.
+
+## Creditails
+
+Change API key
+ apiKey: 'YOUR_API_KEY'
+in the next files
+\src\environments\environment.prod.ts
+\src\environments\environment.ts
 
 ## Development server
 
